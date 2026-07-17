@@ -1,0 +1,345 @@
+/* ========================================
+   Cat Care Community - Landing Page Styles
+   Color Palette:
+   - Cream: #F9F5F0
+   - Soft Charcoal: #2D2D2D
+   - Muted Terracotta: #C77D63
+   - Warm Beige: #E8DCC4
+   - Light Gray: #6B6B6B
+   ======================================== */
+
+/* CSS Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-cream: #F9F5F0;
+    --color-charcoal: #2D2D2D;
+    --color-terracotta: #C77D63;
+    --color-beige: #E8DCC4;
+    --color-gray: #6B6B6B;
+    --color-white: #FFFFFF;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.header {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-charcoal);
+    letter-spacing: -0.3px;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+    padding: 80px 0 100px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-cream) 0%, rgba(232, 220, 196, 0.3) 100%);
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.hero-tagline {
+    font-size: 20px;
+    color: var(--color-gray);
+    max-width: 600px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
+}
+
+/* Download Buttons */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.btn-text-top {
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.9;
+    line-height: 1.2;
+}
+
+.btn-text-bottom {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.app-store-icon {
+    width: 17px;
+    height: 51px;
+    fill: var(--color-white);
+}
+
+.android-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+}
+
+.android-btn {
+    background-color: var(--color-terracotta);
+}
+
+.android-btn:hover {
+    background-color: #b56a51;
+}
+
+.download-note {
+    font-size: 12px;
+    color: var(--color-gray);
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+
+.about {
+    padding: 100px 0;
+    background-color: var(--color-white);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 24px;
+    letter-spacing: -0.3px;
+}
+
+.about-description {
+    font-size: 18px;
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+.about-image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-beige);
+    border-radius: 16px;
+    padding: 60px;
+    min-height: 300px;
+}
+
+.cat-icon {
+    width: 120px;
+    height: 120px;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    padding: 40px 0;
+    background-color: var(--color-cream);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.footer-app-name {
+    font-weight: 600;
+    color: var(--color-charcoal);
+}
+
+.footer-link {
+    color: var(--color-terracotta);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--color-charcoal);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-tagline {
+        font-size: 18px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image-placeholder {
+        padding: 40px;
+        min-height: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero {
+        padding: 60px 0 80px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-title {
+        font-size: 26px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .about-image-placeholder {
+        padding: 30px;
+        min-height: 200px;
+    }
+
+    .cat-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* ========================================
+   Fade-in Animation
+   ======================================== */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
